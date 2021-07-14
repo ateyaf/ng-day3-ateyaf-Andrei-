@@ -1,0 +1,34 @@
+
+  <h2>Resturant Menu</h2>
+
+  <div class="container">
+    <div *ngFor="let product of products; index as id">
+      <!-- 
+    <h3>
+        <a routerLink="products/{{ id }}"> {{ id }} {{ product.name }} </a>
+
+    </h3>
+    <img src={{product.img}}>
+    <p *ngIf="product.description">
+        {{ product.description }}
+    </p> -->
+
+
+
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src={{product.img}} class="img-fluid rounded-start">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">
+                <a routerLink="products/{{ id }}"> {{ id }} {{ product.name }} </a>
+              </h5>
+              <p class="card-text"> {{ product.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

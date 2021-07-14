@@ -1,0 +1,19 @@
+img{
+    justify-content: center;
+    width: 20%;
+    height: 10%;
+    border: darkslategray solid;
+    
+    margin-top: 10px;
+
+}
+h2{
+    text-align: center;
+}
+.container{
+    background-color: darkseagreen;
+}
+button{
+    margin-bottom: 20px;
+    color:cyan;
+}
